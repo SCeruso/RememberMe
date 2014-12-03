@@ -45,7 +45,10 @@ body{
 margin:0;
 padding:0 0 0 0;
 color:#000;
-background:#efefef url(css/img/gray_jean.png);
+background:#efefef url(imagenes/fondo-de-pantalla-plano-de-color-arena_844537756.png);
+background-repeat:repeat;
+background-size:cover;
+background-image:url(imagenes/fondo-de-pantalla-plano-de-color-arena_844537756.png);
 font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
 text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
