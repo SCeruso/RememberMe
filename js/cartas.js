@@ -4,7 +4,7 @@ var cartas = new Array(16);
 var seleccionada1 = -1;
 var seleccionada2 = -1;
 var correctas = 0;
-
+var carta;
 function Carta(i) {
     var aux = "im" + i;
     this.img = document.getElementById(aux);
@@ -14,12 +14,10 @@ function Carta(i) {
 
 
 cartaClick = function (event) {
-    var carta = event.target.id;
+    carta = event.target.id;
     carta = carta.slice(2, carta.length);
     carta = parseInt(carta);
-    var imagen = carta;
-    if (carta > 7)
-        imagen = imagen - 8;
+    var imagen = cartas[carta].index - 1;
     if (!cartas[carta].girada && seleccionada1 == -1 && seleccionada2 == -1) {
         this.src = "imagenes/cartas/" + "im" + imagen + ".jpg";
         cartas[carta].girada = true;
@@ -55,7 +53,7 @@ for (var i = 0; i < cartas.length; i++) {
 }
 
 for (var i = 0; i < cartas.length; i++) {
-    if (i < 7)
+    if (i < 8)
         cartas[i].index = i + 1;
     else
         cartas[i].index = (i - 7);
