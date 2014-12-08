@@ -19,13 +19,13 @@ cartaClick = function (event) {
     carta = parseInt(carta);
     var imagen = cartas[carta].index - 1;
     if (!cartas[carta].girada && seleccionada1 == -1 && seleccionada2 == -1) {
-        this.src = "imagenes/cartas/" + "im" + imagen + ".jpg";
+        this.src = "imagenes/cartas/" + "im" + imagen + ".png";
         cartas[carta].girada = true;
         seleccionada1 = carta;
     }
     else if (!cartas[carta].girada && seleccionada2 == -1) {
         seleccionada2 = carta;
-        this.src = "imagenes/cartas/" + "im" + imagen + ".jpg";
+        this.src = "imagenes/cartas/" + "im" + imagen + ".png";
         cartas[carta].girada = true;
 
         if (cartas[seleccionada1].index == cartas[seleccionada2].index) {
@@ -37,13 +37,13 @@ cartaClick = function (event) {
     else if (!cartas[carta].girada) {
         if (cartas[seleccionada1].index != cartas[seleccionada2].index) {
             cartas[seleccionada1].girada = false;
-            cartas[seleccionada1].img.src = "http://placehold.it/100x100/E4247E/ffffff.png&text=100x100";
+            cartas[seleccionada1].img.src = "imagenes/cartas/dorso.jpg";
             cartas[seleccionada2].girada = false;
-            cartas[seleccionada2].img.src = "http://placehold.it/100x100/E4247E/ffffff.png&text=100x100";
+            cartas[seleccionada2].img.src = "imagenes/cartas/dorso.jpg";
         }
         seleccionada1 = carta;
         seleccionada2 = -1;
-        this.src = "imagenes/cartas/" + "im" + imagen + ".jpg";
+        this.src = "imagenes/cartas/" + "im" + imagen + ".png";
         cartas[carta].girada = true;
     }
 }
