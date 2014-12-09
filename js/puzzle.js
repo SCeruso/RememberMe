@@ -6,7 +6,7 @@ var indx = 0;
 var opciones = new Array(4);
 var correctas = [1, 2, 0];
 var boton = document.getElementById("Siguiente");
-
+var recarga = document.getElementById("recarga");
 
 puzzle.src = "imagenes/Puzzle/animales_puzzle.jpg";
 
@@ -40,9 +40,28 @@ botonClick = function (event) {
     }
 }
 boton.addEventListener("click", botonClick);
+recarga.addEventListener("click", function(event){
+    document.location.href = document.location.href
+});
+recarga.addEventListener("mouseover", function (e) {
+    document.body.style.cursor = 'pointer';
+
+});
+recarga.addEventListener("mouseout", function (e) {
+    document.body.style.cursor = 'default';
+
+});
+
 for (var i = 0; i < opciones.length; i++) {
     opciones[i] = document.getElementById("im" + i);
     opciones[i].src = "imagenes/Puzzle/im" + i + ".png";
     opciones[i].addEventListener("click", imgClick);
+    opciones[i].addEventListener("mouseover", function (e) {
+        document.body.style.cursor = 'pointer';
 
+    });
+    opciones[i].addEventListener("mouseout", function (e) {
+        document.body.style.cursor = 'default';
+
+    });
 }
