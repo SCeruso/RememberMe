@@ -1,7 +1,7 @@
 var puzzle = document.getElementById("puzzle");
 var seleccionada= 0;
 var aciertos = 0;
-var puzzles = ["imagenes/Puzzle/animales_puzzle.jpg", "imagenes/Puzzle/paisaje1_puzzle.jpg", "imagenes/Puzzle/monalisa_puzzle.jpg"]
+var puzzles = ["imagenes/Puzzle/mariposas_puzzle.jpg", "imagenes/Puzzle/paisaje1_puzzle.jpg", "imagenes/Puzzle/monalisa_puzzle.jpg"]
 var indx = 0;
 var opciones = new Array(4);
 var correctas = [1, 2, 0];
