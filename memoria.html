@@ -18,40 +18,49 @@
 </head>
 <body>
 <div class="grid">
-    <div class="col_12">    
-            <h2 class="left">
-                <a href="juegosde.html">
-                    <i class="icon-home pull-left"></i>
-                </a>       
-                <a href="perfil.html"><i class="icon-user icon-border pull-right"></i></a>
-            </h2>       
-    </div>
-	<div class="col_12">
-            <h2 class="center">
-        	        <p>Cartas</p>
-        	    </h2>
-		<hr/>
+		<div class="col_12">
+                    <h2 class="center">
+                        RememberMe
+                    </h2>
+                    <h6 class="center">
+                        Aplicaci&oacute;n web para el entretenimiento y desarrollo mental, especialmente diseñada para personas con Alzheimer
+                    </h6>
+                </div>
+
+               <div class="col_12">
+                 
+                    <ul class="menu center" color="red">
+                    <li><a href="juegosde.html"><i class="icon-home icon-large"></i>Juegos</a>
+                        <ul>
+                            <li><a href="puzzle.html">Lógica</a></li>
+                            <li><a href="memoria.html">Memoria</a></li>
+                            <li><a href="tusimagenes.html">Tus imágenes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="perfil.html"><i class="icon-user"></i>Tu perfil</a>
+                    <li><a href="contenido.html"><i class="icon-book"></i> Contenidos</a></li>
+                    <li><a href="ayuda.html"><i class="icon-question-sign"></i> Ayuda</a></li>
+                    <li><a href="resultados.html"><i class="icon-folder-open-alt"></i>Resultados</a>
+                    <ul>
+                        <li><a href="resultados.html">Hoy</a></li>
+                        <li><a href="resultados_semana.html">Esta semana</a></li>
+                        <li><a href="resultados_mes.html">Este mes</a></li>
+                        <li><a href="resultados_generales.html">Generales</a></li>
+                    </ul>
+                    <li><a href="iniciarSesion.html"><i class="icon-cog"></i>Configuraci&oacute;n</a></li>
+                    <li><a href="iniciarSesion.html"><i class="icon-signout"></i>Salir</a></li>     
+		    </ul>
+	      
+	  </div>
+
+	<div class="col_12">	
+            <h3 class="center">
+        	        Cartas
+        	    </h3>
 	</div>
+	<div class="col_12"></div>
 	<div class="col_2"></div>
-       <!-- <div class="gallery">
-            <img src="http://placehold.it/100x100/4D99E0/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/75CC00/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/E49800/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/E4247E/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/00C6E4/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/E4DB0F/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/7400E4/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/C50000/ffffff.png&text=100x100" width="100" height="200"/>
-            <img src="http://placehold.it/100x100/4D99E0/ffffff.png&text=100x100" width="100" height="200" />
-            <img src="http://placehold.it/100x100/75CC00/ffffff.png&text=100x100" width="100" height="200" />
-            <img src="http://placehold.it/100x100/E49800/ffffff.png&text=100x100" width="100" height="200" />
-            <img src="http://placehold.it/100x100/E4247E/ffffff.png&text=100x100" width="100" height="200" />
-            <img src="http://placehold.it/100x100/00C6E4/ffffff.png&text=100x100" width="100" height="200" />
-            <img src="http://placehold.it/100x100/E4DB0F/ffffff.png&text=100x100" width="100" height="200" />
-            <img src="http://placehold.it/100x100/7400E4/ffffff.png&text=100x100" width="100" height="200" />
-            <img src="http://placehold.it/100x100/C50000/ffffff.png&text=100x100" width="100" height="200" />
-        </div>-->
-	<div class="col_8">
+	<div class="col_8" align="center">
         <table cellspacing="0" cellpadding="0" >
             <thead> </thead>
             <tbody>
@@ -86,21 +95,26 @@
 	<div class="col_2"></div>
 	</div>
     <script type="text/javascript" src="js/cartas.js"></script>
-    <hr />
+    
     <div class="col_12">
+    <h3 class="center">
+    <i id="recarga" class="icon-refresh"></i>
+    </h3>
     </div>
+    <script type="text/javascript" src="js/recargar.js"></script>
     <div class="col_12">
-        <h3 class="right">
+      <h3 class="center">
+      <i class=" icon-play-circle pull-left"></i>
+	  
             <a href = "http://www.twitter.com" target = "blank">
-                <i class="icon-twitter-sign" title= "Twitter"></i></a>
+                <i class="icon-twitter-sign pull-right" title= "Twitter"></i></a>
             <a href = "http://www.facebook.com" target = "blank">
-                <i class="icon-facebook-sign" title= "Facebook"></i></a>
+                <i class="icon-facebook-sign pull-right" title= "Facebook"></i></a>
             <a href = "http://www.google.com" target = "blank">
-                <i class="icon-google-plus-sign" title= "Google +"></i></a>
+                <i class="icon-google-plus-sign pull-right" title= "Google +"></i></a>
             <a href = "http://www.linkedin.com" target = "blank">
-                <i class="icon-linkedin-sign" title= "Linkedin"></i></a>
-	    <i class=" icon-play-circle pull-left"></i>  
-        </h3>
+                <i class="icon-linkedin-sign pull-right" title= "Linkedin"></i></a>
+       </h3>
     </div>
 </div> <!-- End Grid -->
 </body>
