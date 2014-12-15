@@ -8,7 +8,7 @@ var correctas = [1, 2, 0];
 var boton = document.getElementById("Siguiente");
 var recarga = document.getElementById("recarga");
 
-puzzle.src = "imagenes/Puzzle/animales_puzzle.jpg";
+puzzle.src = "imagenes/Puzzle/mariposas_puzzle.jpg";
 
 imgClick = function (event) {
     carta = event.target.id;
