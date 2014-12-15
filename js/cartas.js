@@ -58,3 +58,4 @@ for (var i = 0; i < cartas.length; i++) {
     else
         cartas[i].index = (i - 7);
 }
+
